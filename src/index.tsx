@@ -4,12 +4,15 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import HomePage from './pages/homePage/homePage'
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+	<HomePage />
   </React.StrictMode>
 );
 
