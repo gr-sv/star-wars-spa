@@ -1,6 +1,18 @@
 :root {
 	--background-default: #000000;
-	--text-default: #e6e8e6;	
+	--text-default: #e6e8e6;
+	--grey-default: #a8a9ad;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 * {
@@ -32,9 +44,15 @@ body {
 }
 
 main {
+	padding: 4em;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	flex-grow: 1;
 }
+
+img {
+	display: block;
+}
+

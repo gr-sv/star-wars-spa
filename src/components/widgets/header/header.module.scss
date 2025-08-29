@@ -1,0 +1,14 @@
+.header {
+	width: 100vw;
+	padding: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: .05em solid var(--grey-default);
+}
+
+.headerLogo {
+	width: 10em;
+	height: auto;
+}
