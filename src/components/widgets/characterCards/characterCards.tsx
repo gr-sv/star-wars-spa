@@ -1,34 +1,20 @@
 import React from "react";
 import s from './chatacterCards.module.scss'
+import Wrapper from "../wrapper/wrapper";
+import Card from "../card/card";
 
 function CharacterCards() {
 	return (
-		<>
+		<Wrapper>
 			<div className={s.cards}>
-				<div className={s.card}>
-					<p>Character</p>
-				</div>
-				<div className={s.card}>
-					<p>Character</p>
-				</div>
-				<div className={s.card}>
-					<p>Character</p>
-				</div>
-				<div className={s.card}>
-					<p>Character</p>
-				</div>
-				<div className={s.card}>
-					<p>Character</p>
-				</div>
-				<div className={s.card}>
-					<p>Character</p>
-				</div>
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />				
 			</div>
-
-			<div>
-				{/* pagination */}
-			</div>
-		</>
+		</Wrapper>
 	)
 
 }

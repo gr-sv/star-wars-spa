@@ -1,5 +1,6 @@
 :root {
 	--background-default: #000000;
+	--background-second: #1B1B1B;
 	--text-default: #e6e8e6;
 	--grey-default: #a8a9ad;
 }
@@ -39,7 +40,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 
 main {
