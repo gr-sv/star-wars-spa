@@ -1,15 +1,17 @@
 import React from 'react';
 import s from './header.module.scss';
+import Wrapper from '../wrapper/wrapper';
 
 function Header() {
 	return (
 		<header className={s.header}>
-			<h1 className='visually-hidden'>Star Wars</h1>
+			<Wrapper>
+				<h1 className='visually-hidden'>Star Wars</h1>
 
-			<a className={s.headerLink}>
-				<img className={s.headerLogo} src='/assets/images/logo.png' />
-			</a>
-			
+				<a className={s.headerLink}>
+					<img className={s.headerLogo} src='/assets/images/logo.png' />
+				</a>
+			</Wrapper>
 		</header>
 	)	
 }
