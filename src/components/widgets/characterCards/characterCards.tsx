@@ -12,6 +12,9 @@ function CharacterCards() {
 				<Card />
 				<Card />
 				<Card />
+				<Card />
+				<Card />
+				<Card />
 				<Card />				
 			</div>
 		</Wrapper>
