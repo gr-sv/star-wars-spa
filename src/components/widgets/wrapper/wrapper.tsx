@@ -8,7 +8,7 @@ export interface WrapperProps  {
 
 function Wrapper({children, className}: WrapperProps) {
 	return (
-		<div className={s.wrapper}>
+		<div className={`${s.wrapper} ${className}`}>
 			{ children }
 		</div>
 	)
