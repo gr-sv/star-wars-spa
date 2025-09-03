@@ -1,7 +1,31 @@
 .card {
+	align-self: center;
 	width: 100%;
+	max-width: 300px;
 	height: 100%;
-	padding: 5em;
+	padding: 2em 1em;
 	background-color: var(--background-second);
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+}
+
+.cardIconBack {
+	width: 4em;
+	height: 5em;
+	margin-bottom: 1em;
+	padding: 1em;
+	border-radius: .5em;
+	background-color: var(--background-default);
+}
+
+.cardName {
+	padding: .5em 0 1em 0;
+}
+
+.cardUnderlining {
+	width: 40%;
+	height: .075em;
+	background-color: var(--grey-default);
 }
