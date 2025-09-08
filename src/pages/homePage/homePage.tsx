@@ -15,7 +15,7 @@ function HomePage() {
 		const fetchData = async () => {
 			try{
 				setLoading(true);
-				const response =await axios.get('https://swapi.py4e.com/api/people/');
+				const response = await axios.get('https://swapi.py4e.com/api/people/');
 
 				setLoading(false);
 				setData(response.data.results);
@@ -37,7 +37,7 @@ function HomePage() {
 		<>
 			<Header />
 			<main>
-				<CharacterCards />
+				<CharacterCards characters={data} />
 			</main>
 		</>
 	)	

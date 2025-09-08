@@ -12,7 +12,6 @@ function NotFoundPage() {
 					<h1 className={s.title}>Oops!</h1>
 					<p className={s.text}>Page not found</p>
 				</Wrapper>
-				
 			</main>
 		</>
 	)	
