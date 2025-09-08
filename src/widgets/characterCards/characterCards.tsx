@@ -13,14 +13,14 @@ interface CharacterCardsProps {
 function CharacterCards({ characters }: CharacterCardsProps) {
 	return (
 		<Wrapper>
-			
-			{characters.map(character => (
-				<div className={s.cards}>
-					<div key={character.name} className={s.cardIconBack} />
-					<h2 className={s.cardName}>{character?.name}</h2>
-				</div>
-			))}
-			
+			<div className={s.cards}>
+				{characters.map(character => (
+					<div className={s.card}>
+						<div key={character.name} className={s.cardIconBack} />
+						<h2 className={s.cardName}>{character?.name}</h2>
+					</div>
+				))}
+			</div>
 		</Wrapper>
 	)
 }
