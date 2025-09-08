@@ -19,6 +19,16 @@
 	flex-direction: column;
 	justify-items: center;
 	align-items: center;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 70%;
+		height: .075em;
+		color: var(--grey-default);
+		position: absolute;
+		bottom: 2em;
+	}
 }
 
 .cardIconBack {

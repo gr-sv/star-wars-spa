@@ -14,7 +14,7 @@ function CharacterCards({ characters }: CharacterCardsProps) {
 	return (
 		<Wrapper>
 			<div className={s.cards}>
-				{characters.map(character => (
+				{characters?.map(character => (
 					<div className={s.card}>
 						<div key={character.name} className={s.cardIconBack} />
 						<h2 className={s.cardName}>{character?.name}</h2>
