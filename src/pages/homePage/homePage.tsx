@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/widgets/header/header';
-import CharacterCards from '../../components/widgets/characterCards/characterCards';
+import Header from '../../widgets/header/header';
+import CharacterCards from '../../widgets/characterCards/characterCards';
 
 function HomePage() {
 	return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/widgets/header/header';
-import Wrapper from '../../components/widgets/wrapper/wrapper';
+import Header from '../../widgets/header/header';
+import Wrapper from '../../widgets/wrapper/wrapper';
 import s from './notFoundPage.module.scss';
 
 function NotFoundPage() {
