@@ -2,7 +2,7 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, auto);
+	grid-template-rows: repeat(3, auto);
 	gap: 1em;
 	justify-items: center;
 	align-items: center;
@@ -25,7 +25,7 @@
 		content: '';
 		width: 70%;
 		height: .075em;
-		color: var(--grey-default);
+		background-color: var(--grey-default);
 		position: absolute;
 		bottom: 2em;
 	}
