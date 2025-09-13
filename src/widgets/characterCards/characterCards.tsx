@@ -8,9 +8,16 @@ interface Character {
 
 interface CharacterCardsProps {
 	characters: Character[];
+	loading: boolean;
 };
 
-function CharacterCards({ characters }: CharacterCardsProps) {
+function CharacterCards({ characters, loading }: CharacterCardsProps) {
+
+	if(loading) {
+		return (
+			<h2>Loading...</h2>
+		)
+	}
 
 	return (
 		<Wrapper>

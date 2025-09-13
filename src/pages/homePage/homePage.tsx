@@ -39,7 +39,7 @@ function HomePage() {
 		<>
 			<Header />
 			<main>
-				<CharacterCards characters={data} />
+				<CharacterCards characters={data} loading={loading}/>
 
 				<div className='pagination'>
 
