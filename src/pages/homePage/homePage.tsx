@@ -9,6 +9,8 @@ function HomePage() {
 
 	const[data, setData] = useState([]);
 	const[loading, setLoading] = useState(false);
+	const[currentPage, setCurrentPage] = useState(1);
+	const[charactersPerPage] = useState(9);
 
 	useEffect(() => {
 
@@ -38,6 +40,13 @@ function HomePage() {
 			<Header />
 			<main>
 				<CharacterCards characters={data} />
+
+				<div className='pagination'>
+
+
+
+
+				</div>
 			</main>
 		</>
 	)	
