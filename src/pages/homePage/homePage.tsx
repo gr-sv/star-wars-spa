@@ -35,6 +35,10 @@ function HomePage() {
 
 	console.log(data);
 
+	const charactersLastIndex = currentPage * charactersPerPage;
+	const charactersFirstIndex = charactersLastIndex - charactersPerPage;
+	const charactersOnPage = data.slice(charactersFirstIndex, charactersLastIndex);
+ 
 	return (
 		<>
 			<Header />
