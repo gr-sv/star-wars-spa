@@ -11,6 +11,7 @@ interface CharacterCardsProps {
 };
 
 function CharacterCards({ characters }: CharacterCardsProps) {
+
 	return (
 		<Wrapper>
 			<div className={s.cards}>
