@@ -6,7 +6,6 @@ import CharacterCards from '../../widgets/characterCards/characterCards';
 import axios from 'axios';
 
 import s from './homePage.module.scss';
-import Wrapper from '../../widgets/wrapper/wrapper';
 
 function HomePage() {
 
@@ -53,6 +52,10 @@ function HomePage() {
 		pageNumbers.push(i);
 	}
 	
+	const paginate = (pageNumber: number) => {
+		setCurrentPage(pageNumber);
+	}
+	
 	// Check:
 	console.log('Page Numbers: ', pageNumbers);
  
@@ -60,17 +63,15 @@ function HomePage() {
 		<>
 			<Header />
 			<main>
-				<CharacterCards characters={data} loading={loading}/>
+				<CharacterCards characters={charactersOnPage} loading={loading}/>
 
-				<Wrapper>
-					<div className={s.pagination}>
-						{pageNumbers.map(pageNumber => (
-							<a href='!#' key={pageNumber} className={s.paginationLink}>
-								{pageNumber}
-							</a>
-						))}
-					</div>
-				</Wrapper>				
+				<div className={s.pagination}>
+					{pageNumbers.map(pageNumber => (
+						<a href='!#' key={pageNumber} className={s.paginationLink} onClick={() => paginate(pageNumber)}>
+							{pageNumber}
+						</a>
+					))}
+				</div>
 			</main>
 		</>
 	)	

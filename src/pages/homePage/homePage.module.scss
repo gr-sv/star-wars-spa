@@ -1,7 +1,8 @@
 .pagination {
 	width: 50%;
+	padding: .5em 0 2em 0;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -27,13 +28,13 @@
 	&:hover {
 		&::after {
 			width: 50%;
-			box-shadow: 0 0 .2em .1em var(--blue-shadow);
+			box-shadow: 0 0 .25em .1em var(--blue-shadow);
 		}
 	}
 
 	&:active {
 		&::after {
-			box-shadow: 0 0 .2em .1em var(--grey-shadow);
+			box-shadow: 0 0 .25em .1em var(--grey-shadow);
 		}
 	}
 
