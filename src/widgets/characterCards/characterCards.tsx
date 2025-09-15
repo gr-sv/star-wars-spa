@@ -15,7 +15,9 @@ function CharacterCards({ characters, loading }: CharacterCardsProps) {
 
 	if(loading) {
 		return (
-			<h2>Loading...</h2>
+			<Wrapper>
+				<h2 className={s.loading}>Loading...</h2>
+			</Wrapper>
 		)
 	}
 
