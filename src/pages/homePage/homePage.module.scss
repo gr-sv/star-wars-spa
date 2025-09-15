@@ -1,0 +1,40 @@
+.pagination {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.paginationLink {
+	padding: .5em 1em;
+	color: var(--text-default);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: .3s;
+
+	&::after {
+		content: '';
+		width: 0;
+		height: .05em;
+		background-color: var(--text-default);
+		border-radius: .05em;
+		position: absolute;
+		bottom: 0;		
+	}
+
+	&:hover {
+		&::after {
+			width: 50%;
+			box-shadow: 0 0 .2em .1em var(--blue-shadow);
+		}
+	}
+
+	&:active {
+		&::after {
+			box-shadow: 0 0 .2em .1em var(--grey-shadow);
+		}
+	}
+
+}
