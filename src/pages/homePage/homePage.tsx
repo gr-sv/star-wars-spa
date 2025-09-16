@@ -58,7 +58,15 @@ function HomePage() {
 	
 	// Check:
 	console.log('Page Numbers: ', pageNumbers);
+
+	const nextPage = () => {
+		setCurrentPage(prev => prev + 1);
+	}
  
+	const prevPage = () => {
+		setCurrentPage(prev => prev - 1);
+	}
+
 	return (
 		<>
 			<Header />
@@ -66,7 +74,9 @@ function HomePage() {
 				<CharacterCards characters={charactersOnPage} loading={loading}/>
 
 				<div className={s.pagination}>
-					{/* <button>Prev Page</button> */}
+					<button className={s.paginationButtonPrev} onClick={prevPage}>
+						<span className='visually-hidden'>Prev Page</span>
+					</button>
 
 					{pageNumbers.map(pageNumber => (
 						<a href='!#' key={pageNumber} className={s.paginationLink} onClick={() => paginate(pageNumber)}>
@@ -74,7 +84,9 @@ function HomePage() {
 						</a>
 					))}
 
-					{/* <button>Next Page</button> */}
+					<button className={s.paginationButtonNext} onClick={nextPage}>
+						<span className='visually-hidden'>Next Page</span>
+					</button>
 				</div>
 			</main>
 		</>
