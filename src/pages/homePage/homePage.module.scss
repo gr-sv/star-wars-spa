@@ -1,5 +1,5 @@
 .pagination {
-	width: 50%;
+	width: 40%;
 	padding: .5em 0 2em 0;
 	display: flex;
 	justify-content: space-between;
@@ -8,6 +8,7 @@
 
 .paginationLink {
 	padding: .5em 1em;
+	font-size: 1.2em;
 	color: var(--text-default);
 	display: flex;
 	justify-content: center;
@@ -37,4 +38,25 @@
 			box-shadow: 0 0 .25em .1em var(--grey-shadow);
 		}
 	}
+}
+
+.paginationButton {
+	padding: .5em;
+	background-color: transparent;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	&::after {
+		bottom: 0;
+	}
+}
+
+.paginationIcon {
+	width: auto;
+	height: 1.25em;
+	fill: var(--text-default);
+	background-color: var(--background-default);
 }
