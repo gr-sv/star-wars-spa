@@ -13,7 +13,7 @@ function HomePage() {
 	const[loading, setLoading] = useState(false);
 	const[charactersCount, setCharactersCount] = useState(0);
 	const[currentPage, setCurrentPage] = useState(1);
-	const[charactersPerPage] = useState(9);
+	const[charactersPerPage] = useState(10);
 
 	useEffect(() => {
 
@@ -66,11 +66,15 @@ function HomePage() {
 				<CharacterCards characters={charactersOnPage} loading={loading}/>
 
 				<div className={s.pagination}>
+					{/* <button>Prev Page</button> */}
+
 					{pageNumbers.map(pageNumber => (
 						<a href='!#' key={pageNumber} className={s.paginationLink} onClick={() => paginate(pageNumber)}>
 							{pageNumber}
 						</a>
 					))}
+
+					{/* <button>Next Page</button> */}
 				</div>
 			</main>
 		</>

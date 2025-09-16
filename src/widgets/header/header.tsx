@@ -8,7 +8,7 @@ function Header() {
 			<Wrapper>
 				<h1 className='visually-hidden'>Star Wars</h1>
 
-				<a className={s.headerLink}>
+				<a href='#' className={s.headerLink}>
 					<img className={s.headerLogo} src='/assets/images/logo.png' alt='star wars logo'/>
 				</a>
 			</Wrapper>
