@@ -89,7 +89,7 @@ function HomePage() {
 						</a>
 					))}
 
-					<button className={`${s.paginationLink} ${s.paginationButton}`} onClick={prevPage}>
+					<button className={`${s.paginationLink} ${s.paginationButton}`} onClick={nextPage}>
 						<span className='visually-hidden'>Next Page</span>
 						<svg className={s.paginationIcon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
 							<path d="M313.5 239c9.4 9.4 9.4 24.6 0 33.9l-200 200c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l183-183-183-183c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l200 200z" />
