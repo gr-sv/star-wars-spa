@@ -1,0 +1,7 @@
+.cardWrapper {
+	padding: 2em;
+	background-color: var(--background-second);
+	border-radius: .75em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import HomePage from './pages/homePage/homePage'
 import NotFoundPage from './pages/notFoundPage/notFoundPage';
+import CharacterPage from './pages/characterPage/characterPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +14,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-	<HomePage />
+	{/* <HomePage /> */}
+	<CharacterPage />
 	{/* <NotFoundPage /> */}
   </React.StrictMode>
 );
