@@ -11,7 +11,9 @@ function CharacterPage() {
 			<main>
 				<Wrapper>
 					<div className={s.cardWrapper}>
-						<div className={s.cardImage} />
+						<div className={s.cardImage}>
+							<h2 className={s.cardTitle_main}>Character's image</h2>
+						</div>
 
 						<div className={s.cardInformation}>
 							<h2 className={s.cardTitle_main}>Character's Name</h2>
