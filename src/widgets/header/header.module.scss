@@ -7,7 +7,14 @@
 	border-bottom: .05em solid var(--grey-default);
 }
 
+.headerWrapper {
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 1em;
+}
+
 .headerLogo {
 	width: 10em;
 	height: auto;
+	padding-bottom: 1em;
 }
