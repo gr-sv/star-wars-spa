@@ -14,8 +14,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-	{/* <HomePage /> */}
-	<CharacterPage />
+	<HomePage />
+	{/* <CharacterPage /> */}
 	{/* <NotFoundPage /> */}
   </React.StrictMode>
 );
