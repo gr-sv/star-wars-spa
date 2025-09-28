@@ -23,14 +23,13 @@ function CharacterCards({ characters, loading }: CharacterCardsProps) {
 
 	return (
 		<Wrapper>
-			<a href="#" className={s.cards}>
+			<div className={s.cards}>
 				{characters?.map(character => (
-					<div key={character.name} className={s.card}>
-						<div className={s.cardIconBack} />
+					<a href="#" key={character.name} className={s.card}>
 						<h2 className={s.cardName}>{character?.name}</h2>
-					</div>
+					</a>
 				))}
-			</a>
+			</div>
 		</Wrapper>
 	)
 }
