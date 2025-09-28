@@ -26,6 +26,7 @@
 	justify-items: center;
 	align-items: center;
 	position: relative;
+	transition: .3s;
 
 	&::after {
 		content: '';

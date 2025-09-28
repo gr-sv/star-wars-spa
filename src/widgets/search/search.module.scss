@@ -6,16 +6,51 @@
 	gap: .5em;
 }
 
+.searchLabel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: .5em;
+	transition: .3s;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 .searchInput {
+	width: 6em;
 	padding: .5em;
 	color: var(--text-default);
 	background-color: var(--background-default);
+	transition: .3s;
 
 	&::placeholder {
+		font-family: var(--font-saira), Arial, Helvetica, sans-serif;
 		color: var(--text-default);
 		font-size: 1em;
 		text-transform: uppercase;
 	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&:focus {
+		width: 20em;
+		outline: none;
+		border: .05em solid var(--text-default);
+		border-radius: .75em;
+		cursor: auto;
+		
+		&::placeholder {
+			color: var(--grey-default);
+			font-size: 1em;
+			text-transform: capitalize;
+		}
+	}
+
+
 }
 
 .searchIcon {
