@@ -58,7 +58,7 @@ function HomePage() {
 
 				<div className={s.pagination}>
 					<button
-						className={`${s.paginationLink} ${s.paginationButton}`}
+						className={`${s.paginationPage} ${s.paginationButton}`}
 						onClick={prevPage}
 						disabled={currentPage === 1}
 					>
