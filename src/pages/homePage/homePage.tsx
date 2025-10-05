@@ -11,7 +11,7 @@ import s from './homePage.module.scss';
 
 function HomePage() {
 
-	const[data, setData] = useState<any[]>([]); // вопрос?
+	const[data, setData] = useState<any[]>([]); // добаботать
 	const[loading, setLoading] = useState(false);
 	const[charactersCount, setCharactersCount] = useState(0);
 	const[currentPage, setCurrentPage] = useState(1);
@@ -36,13 +36,13 @@ function HomePage() {
 		};
 
 		fetchData();
-	}, [currentPage]); // вопрос?
+	}, [currentPage]);
 
 	//Check:
 	console.log('Data: ', data);
 	console.log('Characters Count: ', charactersCount)
 
-	//Pagination // вопрос?
+	//Pagination
 	const totalPages = Math.ceil(charactersCount / charactersPerPage);
 	const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
