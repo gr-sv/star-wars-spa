@@ -38,8 +38,7 @@
 
 	&:focus {
 		width: 20em;
-		outline: none;
-		border: .05em solid var(--text-default);
+		outline: .05em solid var(--text-default);
 		border-radius: .75em;
 		cursor: auto;
 		

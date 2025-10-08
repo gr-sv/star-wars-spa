@@ -1,6 +1,7 @@
 import React from "react";
 import s from './chatacterCards.module.scss';
 import Wrapper from '../wrapper/wrapper';
+import { Link } from "react-router-dom";
 
 interface Character {
     name: string;
@@ -23,13 +24,13 @@ function CharacterCards({ characters, loading }: CharacterCardsProps) {
 
 	return (
 		<Wrapper>
-			<div className={s.cards}>
+			<Link to='' className={s.cards}>
 				{characters?.map(character => (
 					<a href="#" key={character.name} className={s.card}>
 						<h2 className={s.cardName}>{character?.name}</h2>
 					</a>
 				))}
-			</div>
+			</Link>
 		</Wrapper>
 	)
 }
