@@ -11,7 +11,7 @@ import s from './homePage.module.scss';
 
 function HomePage() {
 
-	const[data, setData] = useState<any[]>([]); // добаботать
+	const[data, setData] = useState<any[]>([]); // доработать
 	const[loading, setLoading] = useState(false);
 	const[charactersCount, setCharactersCount] = useState(0);
 	const[currentPage, setCurrentPage] = useState(1);
