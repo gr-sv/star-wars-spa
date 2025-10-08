@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from '../wrapper/wrapper';
 import Search from '../search/search';
+import { Link } from 'react-router-dom';
 import s from './header.module.scss';
 
 function Header() {
@@ -9,9 +10,9 @@ function Header() {
 			<Wrapper className={s.headerWrapper}>
 				<h1 className='visually-hidden'>Star Wars</h1>
 
-				<a href='#' className={s.headerLink}>
+				<Link to='/' className={s.headerLink}>
 					<img className={s.headerLogo} src='/assets/images/logo.png' alt='star wars logo'/>
-				</a>
+				</Link>
 
 				<Search />
 			</Wrapper>
